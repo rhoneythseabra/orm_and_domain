@@ -20,7 +20,6 @@ public class ProductController {
         this.service = service;
     }
 
-
     @GetMapping(value = "/{id}")
     public ProductDTO findById(@PathVariable Long id){
         return service.findById(id);
